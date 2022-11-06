@@ -1,0 +1,24 @@
+<section>
+    <article>
+        <div class="logo">
+            logo
+        </div>
+        <div class="menu">
+            <ul>
+                
+                
+                {{#if user}}
+                <li><a href="/auth/logout">logout</a></li>
+               
+
+               <li><a href="/auth/profile">profile</a></li>
+               
+                {{else}}
+                {{!-- <li><a href="/">home</a></li> --}}
+                 <li><a href="/auth/register">register</a></li>
+                 <li><a href="/auth/login">login</a></li>
+               {{/if}}
+            </ul>
+        </div>
+    </article>
+</section>

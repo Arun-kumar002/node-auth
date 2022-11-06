@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --base-color:#0d0620;
+    --border-underline:#3f51b5;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    background: #e5e5e5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.add_movies
+{
+    width: 100%;
+    height: 100vh;
+}
+.add_movies > article{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_movies > article > form{
+    width: inherit;
+    height: 400px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #efefef;
+     padding: 12px;
+    box-shadow: 1px 2px 1px grey;
+    flex-wrap: wrap;
+}
+.add_movies > article > form >div
+{
+    flex-basis: 28%;
+    height: 115px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background:#efefef;
+    padding: 0px 25px;
+    /* display: inline-block; */
+}
+.add_movies > article > form >div > input
+{
+    padding: 9px 45px;
+    border-radius: 5px;
+    outline: none;
+    background: #EFEFF0;
+    text-transform: capitalize;
+    color: royalblue;
+    border: none;
+    border-bottom: 2px solid var(--base-color);
+}
+
+
+::placeholder{
+    color: royalblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+.add_movies > article > form >div > button{
+    border: none;
+    padding: 10px 80px;
+    border-radius: 7px;
+    font-size: 19px;
+    font-family: auto;
+    font-style: italic;
+    color: royalblue !important;
+    background: var(--base-color) !important;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.add_movies > article > form >div > button:hover{
+    color: #fff !important;
+    background: var(--border-underline) !important ;
+
+}
+
+
+/* msg section */
+#msg_section{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    align-items: c;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(850px);
+}
+#msg_section > div{
+    color: red;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 500;
+    margin: 6px;
+    letter-spacing: 1px;
+}

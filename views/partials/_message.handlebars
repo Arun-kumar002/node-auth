@@ -1,0 +1,21 @@
+{{!-- <h1>msg</h1> --}}
+<section id="msg_section">
+   {{#each errors}}
+<div>{{text}}</div>
+{{/each}}
+{{#if ERROR_MSG}}
+<h1 style="color: red;">{{ERROR_MSG}}</h1>
+{{/if}}
+{{#if SUCCESS_MSG}}
+<h1 style="color: green;">{{SUCCESS_MSG}}</h1>
+{{/if}}
+{{!-- passport --}}
+{{!-- {{#if error}}
+<h1 style="color: red;">{{error}}</h1>
+{{/if}} --}}
+{{#each alert}}
+<h1>{{msg}}</h1>
+{{/each}}
+</section>
+
+
